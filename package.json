@@ -79,8 +79,10 @@
   },
   "jest": {
     "moduleNameMapper": {
-      "^@src(.*)$": "<rootDir>/src$1",
-      "^@components(.*)$": "<rootDir>/src/components$1"
+      "^@src(.*)$": "<rootDir>/src/$1",
+      "^@components(.*)$": "<rootDir>/src/components/$1",
+      "^@mocks(.*)$": "<rootDir>/src/mocks/$1",
+      "^@custom-types(.*)$": "<rootDir>/src/types/$1"
     }
   },
   "lint-staged": {

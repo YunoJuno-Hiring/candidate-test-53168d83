@@ -3,7 +3,9 @@
     "baseUrl": "./src",
     "paths": {
       "@src": ["./"],
-      "@components": ["./components"]
+      "@components/*": ["./components/*"],
+      "@mocks/*": ["./mocks/*"],
+      "@custom-types/*": ["./types/*"]
     },
     "strict": true,
     "outDir": "public/",
