@@ -4,7 +4,8 @@ import { generateMockCharacter } from '@mocks/character';
 import { Character } from '@custom-types/character';
 
 const meta: Meta<typeof CharacterCard> = {
-  component: CharacterCard
+  component: CharacterCard,
+  tags: ['autodocs']
 };
 
 export default meta;
@@ -12,7 +13,7 @@ export default meta;
 const mockCharacter: Character = generateMockCharacter();
 
 type Story = StoryObj<typeof CharacterCard>;
-export const Main: Story = {
+export const Default: Story = {
   args: {
     characterData: {
       ...mockCharacter

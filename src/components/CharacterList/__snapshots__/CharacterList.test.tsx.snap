@@ -1,0 +1,105 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CharacterList component When loading is false Should Match DOM snapshot 1`] = `
+<div>
+  <div
+    className="CharacterCard"
+  >
+    <div
+      className="CharacterCard-avatar-wrapper"
+    >
+      <img
+        className="CharacterCard-avatar"
+        src="undefinedgandalf_the_grey.jpg"
+      />
+    </div>
+    <div
+      className="CharacterCard-content-container"
+    >
+      <p
+        className="CharacterCard-content"
+      >
+        <strong>
+          Gandalf the Grey
+        </strong>
+      </p>
+      <p
+        className="CharacterCard-content"
+      >
+        Wizard
+      </p>
+      <p
+        className="CharacterCard-content"
+      >
+        A wizard best known among hobbits for his fireworks and mischievous sense of humor, but actually one of the greatest powers of Middle-earth. He reveals the truth about the Ring to Frodo and acts as a guide and counselor.
+      </p>
+    </div>
+  </div>
+  <div
+    className="CharacterCard"
+  >
+    <div
+      className="CharacterCard-avatar-wrapper"
+    >
+      <img
+        className="CharacterCard-avatar"
+        src="undefinedgandalf_the_grey.jpg"
+      />
+    </div>
+    <div
+      className="CharacterCard-content-container"
+    >
+      <p
+        className="CharacterCard-content"
+      >
+        <strong>
+          Gandalf the Grey
+        </strong>
+      </p>
+      <p
+        className="CharacterCard-content"
+      >
+        Wizard
+      </p>
+      <p
+        className="CharacterCard-content"
+      >
+        A wizard best known among hobbits for his fireworks and mischievous sense of humor, but actually one of the greatest powers of Middle-earth. He reveals the truth about the Ring to Frodo and acts as a guide and counselor.
+      </p>
+    </div>
+  </div>
+  <div
+    className="CharacterCard"
+  >
+    <div
+      className="CharacterCard-avatar-wrapper"
+    >
+      <img
+        className="CharacterCard-avatar"
+        src="undefinedgandalf_the_grey.jpg"
+      />
+    </div>
+    <div
+      className="CharacterCard-content-container"
+    >
+      <p
+        className="CharacterCard-content"
+      >
+        <strong>
+          Gandalf the Grey
+        </strong>
+      </p>
+      <p
+        className="CharacterCard-content"
+      >
+        Wizard
+      </p>
+      <p
+        className="CharacterCard-content"
+      >
+        A wizard best known among hobbits for his fireworks and mischievous sense of humor, but actually one of the greatest powers of Middle-earth. He reveals the truth about the Ring to Frodo and acts as a guide and counselor.
+      </p>
+    </div>
+  </div>
+</div>
+`;

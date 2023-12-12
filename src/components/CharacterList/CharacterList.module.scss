@@ -1,0 +1,10 @@
+@import 'styles/_mixins';
+
+.CharacterList-container {
+  width: 98vw;
+
+  @include lg {
+    width: 60vw;
+    min-height: 10vh;
+  }
+}

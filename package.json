@@ -19,6 +19,7 @@
     "@storybook/react": "^7.6.4",
     "@storybook/react-webpack5": "^7.6.4",
     "@storybook/test": "^7.6.4",
+    "@testing-library/react": "^14.1.2",
     "@types/jest": "^29.5.8",
     "@types/react": "^18.2.37",
     "@types/react-dom": "^18.2.15",
@@ -85,6 +86,7 @@
     "moduleNameMapper": {
       "^@src(.*)$": "<rootDir>/src/$1",
       "^@components(.*)$": "<rootDir>/src/components/$1",
+      "^@hooks(.*)$": "<rootDir>/src/hooks/$1",
       "^@mocks(.*)$": "<rootDir>/src/mocks/$1",
       "^@custom-types(.*)$": "<rootDir>/src/types/$1",
       "^@utils(.*)$": "<rootDir>/src/utils/$1"
