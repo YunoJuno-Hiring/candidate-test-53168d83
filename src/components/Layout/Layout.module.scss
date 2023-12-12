@@ -1,4 +1,18 @@
-.Layout-container {
+@import 'styles/_mixins';
+
+.Layout-wrapper {
   display: flex;
   justify-content: center;
+}
+
+.Layout-container {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  width: 98vw;
+
+  @include lg {
+    width: 60vw;
+    min-height: 10vh;
+  }
 }

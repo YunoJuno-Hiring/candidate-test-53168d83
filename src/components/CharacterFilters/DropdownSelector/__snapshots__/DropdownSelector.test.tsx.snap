@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DropdownSelector Should match the DOM snapshot 1`] = `
+<div
+  className="DropdownSelector-container"
+>
+  <p
+    className="DropdownSelector-label"
+  />
+  <select
+    className="DropdownSelector"
+    onChange={[Function]}
+    value="all"
+  >
+    <option
+      value="One"
+    >
+      One
+    </option>
+    <option
+      value="Two"
+    >
+      Two
+    </option>
+    <option
+      value="Three"
+    >
+      Three
+    </option>
+  </select>
+</div>
+`;

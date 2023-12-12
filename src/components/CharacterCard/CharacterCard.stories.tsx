@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import CharacterCard from './CharacterCard';
 import { generateMockCharacter } from '@mocks/character';
-import { Character } from '@custom-types/character';
+import { ICharacter } from '@custom-types/character';
 
 const meta: Meta<typeof CharacterCard> = {
   component: CharacterCard,
@@ -10,7 +10,7 @@ const meta: Meta<typeof CharacterCard> = {
 
 export default meta;
 
-const mockCharacter: Character = generateMockCharacter();
+const mockCharacter: ICharacter = generateMockCharacter();
 
 type Story = StoryObj<typeof CharacterCard>;
 export const Default: Story = {

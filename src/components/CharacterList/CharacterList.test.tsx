@@ -4,7 +4,7 @@ import { cleanup, render } from '@testing-library/react';
 import { generateMockCharacter } from '@mocks/character';
 import renderer from 'react-test-renderer';
 
-import * as useFetchMock from '@hooks/useFetchCharacters';
+import * as useFetchMock from '@hooks/useFetchCharacterList';
 
 const mockCharacter = generateMockCharacter();
 
@@ -15,7 +15,7 @@ afterEach(() => {
 describe('CharacterList component', () => {
   describe('When loading is true', () => {
     it('should return a loading spinner', () => {
-      jest.spyOn(useFetchMock, 'useFetchCharacters').mockReturnValue({
+      jest.spyOn(useFetchMock, 'useFetchCharacterList').mockReturnValue({
         loading: true,
         characterList: []
       });
@@ -26,7 +26,7 @@ describe('CharacterList component', () => {
 
   describe('When loading is false', () => {
     it('should return a list of character cards', () => {
-      jest.spyOn(useFetchMock, 'useFetchCharacters').mockReturnValue({
+      jest.spyOn(useFetchMock, 'useFetchCharacterList').mockReturnValue({
         loading: false,
         characterList: [mockCharacter]
       });
@@ -36,7 +36,7 @@ describe('CharacterList component', () => {
     });
 
     it('Should Match DOM snapshot', () => {
-      jest.spyOn(useFetchMock, 'useFetchCharacters').mockReturnValue({
+      jest.spyOn(useFetchMock, 'useFetchCharacterList').mockReturnValue({
         loading: false,
         characterList: [mockCharacter, mockCharacter, mockCharacter]
       });

@@ -1,23 +1,22 @@
 import { CharacterCard } from '@components/CharacterCard';
-import { useFetchCharacters } from '@hooks/useFetchCharacters';
+import { useFetchCharacterList } from '@hooks/useFetchCharacterList';
 import React from 'react';
 import { LoadingSpinner } from '@components/LoadingSpinner';
-import { Character } from '@custom-types/character';
-import { UseFetchCharactersProps } from '@custom-types/hooks';
-import styles from './CharacterList.module.scss';
+import { ICharacter } from '@custom-types/character';
+import { UseFetchCharactersResponse } from '@custom-types/hooks';
 
 export default function CharacterList() {
-  const { loading, characterList }: UseFetchCharactersProps = useFetchCharacters(
+  const { loading, characterList }: UseFetchCharactersResponse = useFetchCharacterList(
     `${process.env.REACT_APP_CHARACTER_LIST_URL}`
   );
 
   if (loading) return <LoadingSpinner />;
 
   return (
-    <div className={styles['CharacterList-container']}>
+    <div>
       {!loading &&
         characterList &&
-        characterList.map((character: Character, key: number) => (
+        characterList.map((character: ICharacter, key: number) => (
           <CharacterCard characterData={character} key={key} />
         ))}
     </div>

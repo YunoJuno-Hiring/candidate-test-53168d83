@@ -6,5 +6,9 @@ type LayoutProps = {
 };
 
 export default function Layout({ children }: LayoutProps) {
-  return <div className={styles['Layout-container']}>{children}</div>;
+  return (
+    <div className={styles['Layout-wrapper']}>
+      <div className={styles['Layout-container']}>{children}</div>
+    </div>
+  );
 }

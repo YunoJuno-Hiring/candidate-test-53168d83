@@ -1,11 +1,11 @@
 import React from 'react';
 
 import type { Meta, StoryObj } from '@storybook/react';
-import LoadingSpinner from './LoadingSpinner';
+import CharacterFilters from './CharacterFilters';
 import FilterContextProvider from '@contexts/FilterContext';
 
-const meta: Meta<typeof LoadingSpinner> = {
-  component: LoadingSpinner,
+const meta: Meta<typeof CharacterFilters> = {
+  component: CharacterFilters,
   decorators: [
     (Story) => (
       <FilterContextProvider>
@@ -17,8 +17,8 @@ const meta: Meta<typeof LoadingSpinner> = {
 
 export default meta;
 
-type Story = StoryObj<typeof LoadingSpinner>;
+type Story = StoryObj<typeof CharacterFilters>;
 
 export const Default: Story = {
-  render: () => <LoadingSpinner />
+  render: () => <CharacterFilters />
 };

@@ -1,10 +1,10 @@
-import { Character } from '@custom-types/character';
+import { ICharacter } from '@custom-types/character';
 import React from 'react';
 import styles from './CharacterCard.module.scss';
 import { capitaliseFirstCharacters } from '@utils/stringHelpers';
 
 type CharacterCardProps = {
-  characterData: Character;
+  characterData: ICharacter;
 };
 
 export default function CharacterCard({ characterData }: CharacterCardProps) {
