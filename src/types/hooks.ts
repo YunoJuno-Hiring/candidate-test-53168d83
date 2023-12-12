@@ -1,6 +1,6 @@
-import { Character } from './character';
+import { ICharacter } from './character';
 
-export interface UseFetchCharactersProps {
+export interface UseFetchCharactersResponse {
   loading: boolean;
-  characterList: Character[];
+  characterList: ICharacter[];
 }

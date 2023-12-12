@@ -3,8 +3,8 @@ import logo from '@src/logo.svg';
 import styles from './App.module.scss';
 import { Layout } from '@components/Layout';
 import { CharacterList } from '@components/CharacterList';
-
-// Character list is available in the public directory
+import FilterContextProvider from '@contexts/FilterContext';
+import CharacterFilters from './CharacterFilters/CharacterFilters';
 
 export function App() {
   return (
@@ -15,9 +15,12 @@ export function App() {
       </header>
 
       <section className="App-content">
-        <Layout>
-          <CharacterList />
-        </Layout>
+        <FilterContextProvider>
+          <Layout>
+            <CharacterFilters />
+            <CharacterList />
+          </Layout>
+        </FilterContextProvider>
       </section>
     </div>
   );

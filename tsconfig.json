@@ -4,9 +4,11 @@
     "paths": {
       "@src": ["./"],
       "@components/*": ["./components/*"],
+      "@constants/*": ["./constants/*"],
+      "@contexts/*": ["./contexts/*"],
+      "@custom-types/*": ["./types/*"],
       "@hooks/*": ["./hooks/*"],
       "@mocks/*": ["./mocks/*"],
-      "@custom-types/*": ["./types/*"],
       "@utils/*": ["./utils/*"]
     },
     "strict": true,
