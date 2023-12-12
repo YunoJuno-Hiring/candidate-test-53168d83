@@ -21,7 +21,9 @@ exports[`App Component Matches DOM snapshot 1`] = `
   <section
     className="App-content"
   >
-    <Layout />
+    <Layout>
+      <CharacterList />
+    </Layout>
   </section>
 </div>
 `;

@@ -1,4 +1,4 @@
-@import 'styles/_mixins';
+@import 'styles/_globals';
 
 .CharacterCard {
   background-color: white;
@@ -6,11 +6,6 @@
   margin: 16px;
   display: flex;
   color: $fontColor;
-
-  @include lg {
-    max-width: 40vw;
-    min-width: 30vw;
-  }
 }
 
 .CharacterCard-avatar-container {
@@ -28,9 +23,10 @@
   display: flex;
   flex-direction: column;
   margin: 0px 16px;
-  justify-content: space-between;
 }
 
 .CharacterCard-content {
   margin: 8px;
+  align-self: flex-start;
+  text-align: start;
 }
