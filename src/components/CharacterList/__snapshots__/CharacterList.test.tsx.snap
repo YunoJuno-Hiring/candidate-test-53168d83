@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`CharacterList component When loading is false Should Match DOM snapshot 1`] = `
-<div>
+<div
+  className="CharacterList-container"
+>
   <div
     className="CharacterCard"
   >
