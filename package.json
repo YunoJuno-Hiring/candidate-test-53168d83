@@ -3,10 +3,8 @@
   "version": "0.2.0",
   "private": true,
   "dependencies": {
-    "eslint": "^8.55.0",
     "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "react-test-renderer": "^18.2.0"
+    "react-dom": "18.2.0"
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
@@ -24,13 +22,16 @@
     "@types/react": "^18.2.37",
     "@types/react-dom": "^18.2.15",
     "@types/react-test-renderer": "^18.0.7",
+    "eslint": "^8.55.0",
     "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.0.1",
     "eslint-plugin-storybook": "^0.6.15",
     "husky": "^8.0.3",
     "lint-staged": "^15.1.0",
     "prettier": "^3.1.0",
     "prop-types": "^15.8.1",
     "react-scripts": "^5.0.1",
+    "react-test-renderer": "^18.2.0",
     "sass": "^1.40.1",
     "storybook": "^7.6.4",
     "tsc-files": "^1.1.4",
@@ -49,7 +50,9 @@
     "eject": "craco eject",
     "prepare": "husky install",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "lint": "eslint src/*",
+    "lint:fix": "eslint src/* --fix"
   },
   "browserslist": {
     "production": [
