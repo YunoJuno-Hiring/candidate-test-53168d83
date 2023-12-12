@@ -5,7 +5,8 @@
       "@src": ["./"],
       "@components/*": ["./components/*"],
       "@mocks/*": ["./mocks/*"],
-      "@custom-types/*": ["./types/*"]
+      "@custom-types/*": ["./types/*"],
+      "@utils/*": ["./utils/*"]
     },
     "strict": true,
     "outDir": "public/",

@@ -13,6 +13,7 @@
     "@storybook/addon-interactions": "^7.6.4",
     "@storybook/addon-links": "^7.6.4",
     "@storybook/addon-onboarding": "^1.0.10",
+    "@storybook/addon-styling-webpack": "^0.0.5",
     "@storybook/blocks": "^7.6.4",
     "@storybook/preset-create-react-app": "^7.6.4",
     "@storybook/react": "^7.6.4",
@@ -22,6 +23,7 @@
     "@types/react": "^18.2.37",
     "@types/react-dom": "^18.2.15",
     "@types/react-test-renderer": "^18.0.7",
+    "css-loader": "^6.8.1",
     "eslint": "^8.55.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.0.1",
@@ -34,6 +36,8 @@
     "react-test-renderer": "^18.2.0",
     "sass": "^1.40.1",
     "storybook": "^7.6.4",
+    "style-loader": "^3.3.3",
+    "ts-jest": "^29.1.1",
     "tsc-files": "^1.1.4",
     "typescript": "^5.2.2",
     "webpack": "^5.89.0"
@@ -82,8 +86,15 @@
       "^@src(.*)$": "<rootDir>/src/$1",
       "^@components(.*)$": "<rootDir>/src/components/$1",
       "^@mocks(.*)$": "<rootDir>/src/mocks/$1",
-      "^@custom-types(.*)$": "<rootDir>/src/types/$1"
-    }
+      "^@custom-types(.*)$": "<rootDir>/src/types/$1",
+      "^@utils(.*)$": "<rootDir>/src/utils/$1"
+    },
+    "testMatch": [
+      "**/__tests__/**/*.[jt]s?(x)",
+      "**/components/?(*.)+(spec|test).[jt]s?(x)",
+      "**/components/(*.)+(spec|test).[jt]s?(x)",
+      "**/?(*.)+(spec|test).[tj]s?(x)"
+    ]
   },
   "lint-staged": {
     "**/*.{ts,tsx}": "tsc-files --noEmit src/react-app-env.d.ts",

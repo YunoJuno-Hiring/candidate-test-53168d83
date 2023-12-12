@@ -1,0 +1,36 @@
+@import 'styles/_mixins';
+
+.CharacterCard {
+  background-color: white;
+  padding: 16px;
+  margin: 16px;
+  display: flex;
+  color: $fontColor;
+
+  @include lg {
+    max-width: 40vw;
+    min-width: 30vw;
+  }
+}
+
+.CharacterCard-avatar-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.CharacterCard-avatar {
+  width: 80px;
+  border-radius: 50%;
+}
+
+.CharacterCard-content-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 16px;
+  justify-content: space-between;
+}
+
+.CharacterCard-content {
+  margin: 8px;
+}
