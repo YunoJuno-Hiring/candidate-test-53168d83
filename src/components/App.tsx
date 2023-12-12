@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from '@src/logo.svg';
 import styles from './App.module.scss';
-import { Layout } from '@components';
+import { Layout } from '@components/Layout';
 
 // Character list is available in the public directory
 

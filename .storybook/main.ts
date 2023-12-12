@@ -1,4 +1,5 @@
 import type { StorybookConfig } from '@storybook/react-webpack5';
+import path from 'path';
 
 const config: StorybookConfig = {
   stories: ['../src/**/*.mdx', '../src/**/*.stories.@(js|jsx|mjs|ts|tsx)'],
@@ -7,7 +8,27 @@ const config: StorybookConfig = {
     '@storybook/addon-essentials',
     '@storybook/preset-create-react-app',
     '@storybook/addon-onboarding',
-    '@storybook/addon-interactions'
+    '@storybook/addon-interactions',
+    '@storybook/addon-styling-webpack',
+    {
+      name: '@storybook/addon-styling-webpack',
+
+      options: {
+        rules: [
+          {
+            test: /\.css$/,
+            sideEffects: true,
+            use: [
+              require.resolve('style-loader'),
+              {
+                loader: require.resolve('css-loader'),
+                options: {}
+              }
+            ]
+          }
+        ]
+      }
+    }
   ],
   framework: {
     name: '@storybook/react-webpack5',
@@ -20,6 +41,22 @@ const config: StorybookConfig = {
   docs: {
     autodocs: 'tag'
   },
-  staticDirs: ['..\\public']
+  staticDirs: ['../public'],
+  webpackFinal(config, { configType }) {
+    return {
+      ...config,
+      resolve: {
+        ...config.resolve,
+        alias: {
+          ...config.resolve?.alias,
+          '@src': path.resolve(__dirname, 'src'),
+          '@components': path.resolve(__dirname, '../src/components'),
+          '@mocks': path.resolve(__dirname, '../src/mocks'),
+          '@custom-types': path.resolve(__dirname, '../src/types'),
+          '@utils': path.resolve(__dirname, '../src/utils')
+        }
+      }
+    };
+  }
 };
 export default config;
