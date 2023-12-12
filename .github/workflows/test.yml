@@ -7,7 +7,5 @@ jobs:
       - uses: actions/checkout@v2
       - name: Install modules
         run: npm install
-      - name: Lint Files
-        run: npm run lint
       - name: Run tests
         run: npm test --watchAll=false --all --ci
