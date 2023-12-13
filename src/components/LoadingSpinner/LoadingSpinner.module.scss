@@ -1,0 +1,25 @@
+.LoadingSpinner-dual-ring {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  align-self: center;
+}
+.LoadingSpinner-dual-ring:after {
+  content: ' ';
+  display: block;
+  width: 150px;
+  height: 150px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 10px solid #a9a9a9;
+  border-color: #a9a9a9 transparent #a9a9a9 transparent;
+  animation: LoadingSpinner-dual-ring 1.2s linear infinite;
+}
+@keyframes LoadingSpinner-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

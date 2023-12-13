@@ -1,0 +1,19 @@
+@import 'styles/_globals';
+@import 'styles/_mixins';
+
+.CharacterFilters-container {
+  background-color: white;
+  padding: 16px;
+  margin: 16px;
+  display: flex;
+  color: $fontColor;
+  flex-wrap: wrap;
+  justify-content: center;
+  @include lg {
+    justify-content: start;
+  }
+}
+
+.CharacterFilters-filter {
+  margin: 0px 8px;
+}

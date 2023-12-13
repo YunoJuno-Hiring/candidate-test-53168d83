@@ -1,0 +1,16 @@
+import { Layout } from '@components/Layout';
+import React from 'react';
+import renderer from 'react-test-renderer';
+
+describe('Layout component', () => {
+  it('renders correctly with children', () => {
+    const component = renderer
+      .create(
+        <Layout>
+          <div>child div</div>
+        </Layout>
+      )
+      .toJSON();
+    expect(component).toMatchSnapshot();
+  });
+});

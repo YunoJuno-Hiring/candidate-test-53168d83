@@ -1,16 +1,26 @@
 {
-    "compilerOptions": {
-        "strict": true,
-        "outDir": "public/",
-        "sourceMap": true,
-        "allowJs": true,
-        "jsx": "react",
-        "baseUrl": "./src",
-        "resolveJsonModule": true,
-        "moduleResolution": "Node",
-        "esModuleInterop": true,
-        "isolatedModules": true,
-        "target": "ES6",
-        "lib": ["es2022", "dom"]
-    }
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "paths": {
+      "@src": ["./"],
+      "@components/*": ["./components/*"],
+      "@constants/*": ["./constants/*"],
+      "@contexts/*": ["./contexts/*"],
+      "@custom-types/*": ["./types/*"],
+      "@hooks/*": ["./hooks/*"],
+      "@mocks/*": ["./mocks/*"],
+      "@utils/*": ["./utils/*"]
+    },
+    "strict": true,
+    "outDir": "public/",
+    "sourceMap": true,
+    "allowJs": true,
+    "jsx": "react",
+    "resolveJsonModule": true,
+    "moduleResolution": "Node",
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "target": "ES6",
+    "lib": ["es2022", "dom"]
+  }
 }

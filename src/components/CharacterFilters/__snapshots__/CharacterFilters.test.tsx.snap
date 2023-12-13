@@ -1,0 +1,112 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CharacterFilters Should match the DOM snapshot 1`] = `
+<div
+  className="CharacterFilters-container"
+>
+  <div
+    className="CharacterFilters-filter"
+  >
+    <div>
+      <p
+        className="DropdownSelector-label"
+      >
+        Category
+      </p>
+      <select
+        className="DropdownSelector"
+        onChange={[Function]}
+        value="all"
+      >
+        <option
+          value="all"
+        >
+          All
+        </option>
+        <option
+          value="corrupted hobbit"
+        >
+          Corrupted Hobbit
+        </option>
+        <option
+          value="dark lord"
+        >
+          Dark Lord
+        </option>
+        <option
+          value="dwarf"
+        >
+          Dwarf
+        </option>
+        <option
+          value="elf"
+        >
+          Elf
+        </option>
+        <option
+          value="ent"
+        >
+          Ent
+        </option>
+        <option
+          value="hobbit"
+        >
+          Hobbit
+        </option>
+        <option
+          value="horse"
+        >
+          Horse
+        </option>
+        <option
+          value="human"
+        >
+          Human
+        </option>
+        <option
+          value="spider"
+        >
+          Spider
+        </option>
+        <option
+          value="spirit"
+        >
+          Spirit
+        </option>
+        <option
+          value="wizard"
+        >
+          Wizard
+        </option>
+      </select>
+    </div>
+  </div>
+  <div
+    className="CharacterFilters-filter"
+  >
+    <div>
+      <p
+        className="DropdownSelector-label"
+      >
+        Order by
+      </p>
+      <select
+        className="DropdownSelector"
+        onChange={[Function]}
+        value="alphabetical"
+      >
+        <option
+          value="alphabetical"
+        >
+          Alphabetical
+        </option>
+        <option
+          value="significance"
+        >
+          Significance
+        </option>
+      </select>
+    </div>
+  </div>
+</div>
+`;

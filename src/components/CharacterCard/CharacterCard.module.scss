@@ -1,0 +1,32 @@
+@import 'styles/_globals';
+
+.CharacterCard {
+  background-color: white;
+  padding: 16px;
+  margin: 16px;
+  display: flex;
+  color: $fontColor;
+}
+
+.CharacterCard-avatar-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.CharacterCard-avatar {
+  width: 80px;
+  border-radius: 50%;
+}
+
+.CharacterCard-content-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 16px;
+}
+
+.CharacterCard-content {
+  margin: 8px;
+  align-self: flex-start;
+  text-align: start;
+}

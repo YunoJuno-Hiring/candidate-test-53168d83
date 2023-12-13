@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Layout component renders correctly with children 1`] = `
+<div
+  className="Layout-wrapper"
+>
+  <div
+    className="Layout-container"
+  >
+    <div>
+      child div
+    </div>
+  </div>
+</div>
+`;

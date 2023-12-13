@@ -1,61 +1,107 @@
 {
-    "name": "yunojuno-react-code-test",
-    "version": "0.2.0",
-    "private": true,
-    "dependencies": {
-        "react": "18.2.0",
-        "react-dom": "18.2.0"
-    },
-    "devDependencies": {
-        "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
-        "@types/jest": "^29.5.8",
-        "@types/react": "^18.2.37",
-        "@types/react-dom": "^18.2.15",
-        "eslint-config-prettier": "^9.0.0",
-        "husky": "^8.0.3",
-        "lint-staged": "^15.1.0",
-        "prettier": "^3.1.0",
-        "react-scripts": "^5.0.1",
-        "sass": "^1.40.1",
-        "tsc-files": "^1.1.4",
-        "typescript": "^5.2.2"
-    },
-    "overrides": {
-        "react-scripts": {
-            "typescript": "^5"
-        }
-    },
-    "scripts": {
-        "start": "react-scripts start",
-        "build": "react-scripts build",
-        "test": "react-scripts test --env=jsdom",
-        "eject": "react-scripts eject",
-        "prepare": "husky install"
-    },
-    "browserslist": {
-        "production": [
-            ">0.2%",
-            "not dead",
-            "not op_mini all"
-        ],
-        "development": [
-            "last 1 chrome version",
-            "last 1 firefox version",
-            "last 1 safari version",
-            "last 1 edge version"
-        ]
-    },
-    "eslintConfig": {
-        "extends": [
-            "react-app",
-            "eslint-config-prettier"
-        ]
-    },
-    "husky": {
-        "pre-commit": "lint-staged"
-    },
-    "lint-staged": {
-        "**/*.{ts,tsx}": "tsc-files --noEmit src/react-app-env.d.ts",
-        "*.{ts, tsx,css,scss,json,md}": "prettier --write"
+  "name": "yunojuno-react-code-test",
+  "version": "0.2.0",
+  "private": true,
+  "dependencies": {
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@craco/craco": "^7.1.0",
+    "@storybook/addon-essentials": "^7.6.4",
+    "@storybook/addon-interactions": "^7.6.4",
+    "@storybook/addon-links": "^7.6.4",
+    "@storybook/addon-onboarding": "^1.0.10",
+    "@storybook/addon-styling-webpack": "^0.0.5",
+    "@storybook/blocks": "^7.6.4",
+    "@storybook/preset-create-react-app": "^7.6.4",
+    "@storybook/react": "^7.6.4",
+    "@storybook/react-webpack5": "^7.6.4",
+    "@storybook/test": "^7.6.4",
+    "@testing-library/react": "^14.1.2",
+    "@types/jest": "^29.5.8",
+    "@types/react": "^18.2.37",
+    "@types/react-dom": "^18.2.15",
+    "@types/react-test-renderer": "^18.0.7",
+    "css-loader": "^6.8.1",
+    "eslint": "^8.55.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "eslint-plugin-storybook": "^0.6.15",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.1.0",
+    "prettier": "^3.1.0",
+    "prop-types": "^15.8.1",
+    "react-scripts": "^5.0.1",
+    "react-test-renderer": "^18.2.0",
+    "sass": "^1.40.1",
+    "storybook": "^7.6.4",
+    "style-loader": "^3.3.3",
+    "ts-jest": "^29.1.1",
+    "tsc-files": "^1.1.4",
+    "typescript": "^5.2.2",
+    "webpack": "^5.89.0"
+  },
+  "overrides": {
+    "react-scripts": {
+      "typescript": "^5"
     }
+  },
+  "scripts": {
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test --env=jsdom ",
+    "eject": "craco eject",
+    "prepare": "husky install",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "lint": "eslint src/*",
+    "lint:fix": "eslint src/* --fix"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version",
+      "last 1 edge version"
+    ]
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "eslint-config-prettier",
+      "plugin:storybook/recommended"
+    ]
+  },
+  "husky": {
+    "pre-commit": "lint-staged"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "^@src(.*)$": "<rootDir>/src/$1",
+      "^@components(.*)$": "<rootDir>/src/components/$1",
+      "^@constants(.*)$": "<rootDir>/src/constants/$1",
+      "^@contexts(.*)$": "<rootDir>/src/contexts/$1",
+      "^@custom-types(.*)$": "<rootDir>/src/types/$1",
+      "^@hooks(.*)$": "<rootDir>/src/hooks/$1",
+      "^@mocks(.*)$": "<rootDir>/src/mocks/$1",
+      "^@utils(.*)$": "<rootDir>/src/utils/$1"
+    },
+    "testMatch": [
+      "**/__tests__/**/*.[jt]s?(x)",
+      "**/components/?(*.)+(spec|test).[jt]s?(x)",
+      "**/components/(*.)+(spec|test).[jt]s?(x)",
+      "**/?(*.)+(spec|test).[tj]s?(x)"
+    ]
+  },
+  "lint-staged": {
+    "**/*.{ts,tsx}": "tsc-files --noEmit src/react-app-env.d.ts",
+    "*.{ts, tsx,css,scss,json,md}": "prettier --write"
+  }
 }

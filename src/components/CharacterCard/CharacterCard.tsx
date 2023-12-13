@@ -1,0 +1,29 @@
+import { ICharacter } from '@custom-types/character';
+import { capitaliseFirstCharacters } from '@utils/stringHelpers';
+import React from 'react';
+import styles from './CharacterCard.module.scss';
+
+type CharacterCardProps = {
+  characterData: ICharacter;
+};
+
+export default function CharacterCard({ characterData }: CharacterCardProps) {
+  const avatarUrl = `${process.env.REACT_APP_AVATAR_DIR as string}${characterData.avatar}`;
+
+  return (
+    <div className={styles['CharacterCard']}>
+      <div className={styles['CharacterCard-avatar-wrapper']}>
+        <img className={styles['CharacterCard-avatar']} src={avatarUrl} />
+      </div>
+      <div className={styles['CharacterCard-content-container']}>
+        <p className={styles['CharacterCard-content']}>
+          <strong>{characterData.name}</strong>
+        </p>
+        <p className={styles['CharacterCard-content']}>
+          {capitaliseFirstCharacters(characterData.category)}
+        </p>
+        <p className={styles['CharacterCard-content']}>{characterData.description}</p>
+      </div>
+    </div>
+  );
+}
