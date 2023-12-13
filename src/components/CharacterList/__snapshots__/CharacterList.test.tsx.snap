@@ -10,7 +10,7 @@ exports[`CharacterList component When loading is false Should Match DOM snapshot
     >
       <img
         className="CharacterCard-avatar"
-        src="undefinedgandalf_the_grey.jpg"
+        src="/test-location/gandalf_the_grey.jpg"
       />
     </div>
     <div
@@ -43,7 +43,7 @@ exports[`CharacterList component When loading is false Should Match DOM snapshot
     >
       <img
         className="CharacterCard-avatar"
-        src="undefinedgandalf_the_grey.jpg"
+        src="/test-location/gandalf_the_grey.jpg"
       />
     </div>
     <div
@@ -76,7 +76,7 @@ exports[`CharacterList component When loading is false Should Match DOM snapshot
     >
       <img
         className="CharacterCard-avatar"
-        src="undefinedgandalf_the_grey.jpg"
+        src="/test-location/gandalf_the_grey.jpg"
       />
     </div>
     <div
