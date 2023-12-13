@@ -6,6 +6,8 @@
 }
 
 .DropdownSelector-label {
+  display: flex;
   font-size: small;
   margin: 0;
+  align-self: start;
 }
