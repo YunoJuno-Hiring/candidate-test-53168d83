@@ -1,7 +1,7 @@
+import { ICharacter } from '@custom-types/character';
+import { generateMockCharacter } from '@mocks/character';
 import type { Meta, StoryObj } from '@storybook/react';
 import CharacterCard from './CharacterCard';
-import { generateMockCharacter } from '@mocks/character';
-import { ICharacter } from '@custom-types/character';
 
 const meta: Meta<typeof CharacterCard> = {
   component: CharacterCard,

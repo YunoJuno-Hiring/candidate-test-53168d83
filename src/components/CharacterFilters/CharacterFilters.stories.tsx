@@ -1,8 +1,8 @@
 import React from 'react';
 
+import FilterContextProvider from '@contexts/FilterContext';
 import type { Meta, StoryObj } from '@storybook/react';
 import CharacterFilters from './CharacterFilters';
-import FilterContextProvider from '@contexts/FilterContext';
 
 const meta: Meta<typeof CharacterFilters> = {
   component: CharacterFilters,

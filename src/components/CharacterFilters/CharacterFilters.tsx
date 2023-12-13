@@ -1,7 +1,7 @@
+import { characterCategoryStrings, orderByStrings } from '@constants/strings';
 import React from 'react';
 import styles from './CharacterFilters.module.scss';
 import DropdownSelector from './DropdownSelector/DropdownSelector';
-import { characterCategoryStrings, orderByStrings } from '@constants/strings';
 
 export default function CharacterFilters() {
   const characterCategoryArray: string[] = Object.values(characterCategoryStrings);

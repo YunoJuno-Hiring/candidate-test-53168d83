@@ -1,7 +1,7 @@
 import { ICharacter } from '@custom-types/character';
+import { capitaliseFirstCharacters } from '@utils/stringHelpers';
 import React from 'react';
 import styles from './CharacterCard.module.scss';
-import { capitaliseFirstCharacters } from '@utils/stringHelpers';
 
 type CharacterCardProps = {
   characterData: ICharacter;

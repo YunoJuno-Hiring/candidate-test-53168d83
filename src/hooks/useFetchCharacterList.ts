@@ -1,8 +1,8 @@
 import { useFilterContext } from '@contexts/FilterContext';
 import { ICharacter } from '@custom-types/character';
 import { UseFetchCharactersResponse } from '@custom-types/hooks';
-import { useState, useEffect } from 'react';
 import { handleFilters } from '@utils/filterHelpers';
+import { useEffect, useState } from 'react';
 
 export const useFetchCharacterList = (url: string) => {
   const [loading, setLoading] = useState<boolean>(false);

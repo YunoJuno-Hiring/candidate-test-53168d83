@@ -1,8 +1,8 @@
-import React from 'react';
 import { generateMockCharacter } from '@mocks/character';
-import CharacterCard from './CharacterCard';
-import renderer from 'react-test-renderer';
 import { render } from '@testing-library/react';
+import React from 'react';
+import renderer from 'react-test-renderer';
+import CharacterCard from './CharacterCard';
 
 const mockCharacterData = generateMockCharacter({ category: 'hobbit' });
 

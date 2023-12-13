@@ -1,10 +1,10 @@
-import React from 'react';
-import logo from '@src/logo.svg';
-import styles from './App.module.scss';
-import { Layout } from '@components/Layout';
+import { CharacterFilters } from '@components/CharacterFilters';
 import { CharacterList } from '@components/CharacterList';
+import { Layout } from '@components/Layout';
 import FilterContextProvider from '@contexts/FilterContext';
-import CharacterFilters from './CharacterFilters/CharacterFilters';
+import logo from '@src/logo.svg';
+import React from 'react';
+import styles from './App.module.scss';
 
 export function App() {
   return (

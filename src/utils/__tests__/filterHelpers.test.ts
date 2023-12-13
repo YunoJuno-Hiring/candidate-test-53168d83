@@ -1,5 +1,5 @@
-import { generateMockCharacter } from '@mocks/character';
 import { ICharacter } from '@custom-types/character';
+import { generateMockCharacter } from '@mocks/character';
 import {
   filterCharacterListByCategory,
   orderCharacterListAlphabetically,

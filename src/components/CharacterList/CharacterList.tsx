@@ -1,9 +1,9 @@
 import { CharacterCard } from '@components/CharacterCard';
-import { useFetchCharacterList } from '@hooks/useFetchCharacterList';
-import React from 'react';
 import { LoadingSpinner } from '@components/LoadingSpinner';
 import { ICharacter } from '@custom-types/character';
 import { UseFetchCharactersResponse } from '@custom-types/hooks';
+import { useFetchCharacterList } from '@hooks/useFetchCharacterList';
+import React from 'react';
 
 export default function CharacterList() {
   const { loading, characterList }: UseFetchCharactersResponse = useFetchCharacterList(
