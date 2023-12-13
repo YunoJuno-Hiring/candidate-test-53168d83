@@ -7,9 +7,7 @@ exports[`CharacterFilters Should match the DOM snapshot 1`] = `
   <div
     className="CharacterFilters-filter"
   >
-    <div
-      className="DropdownSelector-container"
-    >
+    <div>
       <p
         className="DropdownSelector-label"
       >
@@ -86,9 +84,7 @@ exports[`CharacterFilters Should match the DOM snapshot 1`] = `
   <div
     className="CharacterFilters-filter"
   >
-    <div
-      className="DropdownSelector-container"
-    >
+    <div>
       <p
         className="DropdownSelector-label"
       >
