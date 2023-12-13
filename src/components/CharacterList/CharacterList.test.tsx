@@ -12,6 +12,10 @@ afterEach(() => {
   cleanup();
 });
 
+beforeEach(() => {
+  process.env.REACT_APP_AVATAR_DIR = '/test-location/';
+});
+
 describe('CharacterList component', () => {
   describe('When loading is true', () => {
     it('should return a loading spinner', () => {

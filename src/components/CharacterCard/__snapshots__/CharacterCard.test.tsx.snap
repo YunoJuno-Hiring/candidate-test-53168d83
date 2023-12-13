@@ -9,7 +9,7 @@ exports[`CharacterCard matches the DOM snapshot 1`] = `
   >
     <img
       className="CharacterCard-avatar"
-      src="undefinedgandalf_the_grey.jpg"
+      src="/test-location/gandalf_the_grey.jpg"
     />
   </div>
   <div

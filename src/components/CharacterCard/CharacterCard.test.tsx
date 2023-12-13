@@ -6,6 +6,10 @@ import CharacterCard from './CharacterCard';
 
 const mockCharacterData = generateMockCharacter({ category: 'hobbit' });
 
+beforeEach(() => {
+  process.env.REACT_APP_AVATAR_DIR = '/test-location/';
+});
+
 describe('CharacterCard', () => {
   it('matches the DOM snapshot', () => {
     const component = renderer.create(<CharacterCard characterData={mockCharacterData} />).toJSON();
