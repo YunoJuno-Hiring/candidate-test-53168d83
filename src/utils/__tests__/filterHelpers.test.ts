@@ -84,14 +84,18 @@ describe('filterHelpers', () => {
       const mockCharacterList: ICharacter[] = [
         generateMockCharacter({ name: 'Théoden' }),
         generateMockCharacter({ name: 'Pippin' }),
+        generateMockCharacter({ name: 'Gríma Wormtongue' }),
+        generateMockCharacter({ name: 'Théodwyn' }),
         generateMockCharacter({ name: 'Éowyn' }),
         generateMockCharacter({ name: 'Éomer' })
       ];
       const expectedResult: ICharacter[] = [
         generateMockCharacter({ name: 'Éomer' }),
         generateMockCharacter({ name: 'Éowyn' }),
+        generateMockCharacter({ name: 'Gríma Wormtongue' }),
         generateMockCharacter({ name: 'Pippin' }),
-        generateMockCharacter({ name: 'Théoden' })
+        generateMockCharacter({ name: 'Théoden' }),
+        generateMockCharacter({ name: 'Théodwyn' })
       ];
 
       const result = orderCharacterListAlphabetically(mockCharacterList);
