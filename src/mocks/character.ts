@@ -1,7 +1,7 @@
 import { ICharacter } from '@custom-types/character';
 
 export function generateMockCharacter(overrides?: Partial<ICharacter>): ICharacter {
-  const mockCharacter = {
+  const defaultCharacter = {
     name: 'Gandalf the Grey',
     category: 'wizard' as const,
     description:
@@ -10,5 +10,5 @@ export function generateMockCharacter(overrides?: Partial<ICharacter>): ICharact
     avatar: 'gandalf_the_grey.jpg'
   };
 
-  return { ...mockCharacter, ...overrides };
+  return { ...defaultCharacter, ...overrides };
 }

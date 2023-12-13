@@ -51,7 +51,7 @@
   "scripts": {
     "start": "craco start",
     "build": "craco build",
-    "test": "craco test --env=jsdom",
+    "test": "craco test --env=jsdom ",
     "eject": "craco eject",
     "prepare": "husky install",
     "storybook": "storybook dev -p 6006",
