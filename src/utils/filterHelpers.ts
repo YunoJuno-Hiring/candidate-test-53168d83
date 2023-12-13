@@ -6,15 +6,14 @@ export function handleFilters(characterList: ICharacter[], selectedValues: IFilt
 
   let filteredCharacterList = characterList;
 
-  if (category !== 'all') {
-    filteredCharacterList = filterCharacterListByCategory(filteredCharacterList, category);
-  }
+  filteredCharacterList = filterCharacterListByCategory(filteredCharacterList, category);
 
   switch (orderBy) {
     case 'alphabetical':
+      filteredCharacterList = orderCharacterListAlphabetically(filteredCharacterList);
       break;
     case 'significance':
-      filteredCharacterList = orderBySignificanceIndex(filteredCharacterList);
+      filteredCharacterList = orderCharacterListBySignificance(filteredCharacterList);
       break;
     default:
       break;
@@ -27,9 +26,16 @@ export function filterCharacterListByCategory(
   characterList: ICharacter[],
   category: string
 ): ICharacter[] {
-  return characterList.filter((character) => character.category === category);
+  if (category !== 'all') {
+    return characterList.filter((character) => character.category === category);
+  }
+  return characterList;
 }
 
-export function orderBySignificanceIndex(characterList: ICharacter[]): ICharacter[] {
+export function orderCharacterListBySignificance(characterList: ICharacter[]): ICharacter[] {
   return characterList.sort((a, b) => a.significanceIndex - b.significanceIndex);
+}
+
+export function orderCharacterListAlphabetically(characterList: ICharacter[]): ICharacter[] {
+  return characterList.sort((a, b) => a.name.localeCompare(b.name, 'en'));
 }
