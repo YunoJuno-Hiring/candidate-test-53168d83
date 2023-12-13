@@ -1,5 +1,5 @@
-import React, { ReactNode, createContext, useContext } from 'react';
 import { IFilterContext } from '@custom-types/contexts';
+import React, { ReactNode, createContext, useContext } from 'react';
 
 interface FilterContextProps {
   selectedValues: IFilterContext;

@@ -1,8 +1,8 @@
 // DropdownSelector.tsx
 import { useFilterContext } from '@contexts/FilterContext';
-import React from 'react';
-import { capitaliseFirstCharacters } from '@utils/stringHelpers';
 import { TContextValue } from '@custom-types/contexts';
+import { capitaliseFirstCharacters } from '@utils/stringHelpers';
+import React from 'react';
 import styles from './DropdownSelector.module.scss';
 
 interface DropdownSelectorProps {

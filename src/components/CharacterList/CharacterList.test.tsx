@@ -1,10 +1,10 @@
-import React from 'react';
-import { CharacterList } from '..';
-import { cleanup, render } from '@testing-library/react';
 import { generateMockCharacter } from '@mocks/character';
+import { cleanup, render } from '@testing-library/react';
+import React from 'react';
 import renderer from 'react-test-renderer';
 
 import * as useFetchMock from '@hooks/useFetchCharacterList';
+import CharacterList from './CharacterList';
 
 const mockCharacter = generateMockCharacter();
 

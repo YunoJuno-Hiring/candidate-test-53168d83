@@ -1,6 +1,6 @@
-import * as stringConstants from '@constants/strings';
+import * as strings from '@constants/strings';
 
-const { characterCategoryStrings } = stringConstants;
+const { characterCategoryStrings } = strings;
 
 export type TCharacterCategories =
   (typeof characterCategoryStrings)[keyof typeof characterCategoryStrings];

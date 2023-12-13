@@ -1,7 +1,7 @@
+import FilterContextProvider from '@contexts/FilterContext';
 import React from 'react';
 import renderer from 'react-test-renderer';
 import CharacterFilters from './CharacterFilters';
-import FilterContextProvider from '@contexts/FilterContext';
 
 describe('CharacterFilters', () => {
   it('Should match the DOM snapshot', () => {

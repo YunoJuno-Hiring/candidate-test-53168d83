@@ -1,7 +1,7 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
-import { App } from './App';
 import * as ShallowRenderer from 'react-test-renderer/shallow';
+import { App } from './App';
 
 describe('App Component', () => {
   it('renders without crashing', () => {
