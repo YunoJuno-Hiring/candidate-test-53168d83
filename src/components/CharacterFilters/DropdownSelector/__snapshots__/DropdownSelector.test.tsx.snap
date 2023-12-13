@@ -1,9 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`DropdownSelector Should match the DOM snapshot 1`] = `
-<div
-  className="DropdownSelector-container"
->
+<div>
   <p
     className="DropdownSelector-label"
   />

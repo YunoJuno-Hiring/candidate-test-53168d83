@@ -22,7 +22,7 @@ export default function DropdownSelector({
   };
 
   return (
-    <div className={styles['DropdownSelector-container']}>
+    <div>
       <p className={styles['DropdownSelector-label']}>{label}</p>
       <select
         className={styles['DropdownSelector']}
